@@ -1,0 +1,379 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+/* Root variables */
+:root {
+    --destaque: #ff0084;
+    --fundo-escuro: #121212;
+    --texto-claro: #ffffff;
+    --fundo-cinza: #212121;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fundo-escuro);
+    color: var(--texto-claro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top:1em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    color: var(--destaque);
+    padding: 10px;
+    text-align: center;
+}
+
+.menu {
+    width: 90%;
+    max-width: 750px;
+    background-color: var(--fundo-cinza);
+    border-radius: 0.5em;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--destaque);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    color: white;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 2em;
+    list-style-type: none;
+}
+
+.lista li a {
+    color: var(--destaque);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    background-color: var(--fundo-cinza);
+    padding: 10px;
+    gap: 2em;
+    border-radius:0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.perfil .nome {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px;
+    text-align: center;
+    color: var(--destaque);
+}
+
+.perfil .imagem-header {
+    background-color: var(--destaque);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.texto-header {
+    width: 100%;
+    max-width: 650px;
+    padding: 10px;
+    background-color: var(--fundo-cinza);
+    color: var(--texto-claro);
+    text-align: justify;
+    font-size: 16px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 1em;
+}
+
+.lista-tecnologias-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+    width: 90%;
+    background-color: var(--fundo-cinza);
+    padding: 10px;
+    border-radius:0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lista-tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lista-tecnologias li {
+    background-color: var(--fundo-cinza);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-tecnologias li img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    padding: 20px;
+    background-color: var(--fundo-cinza);
+    border-radius:0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projeto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2em;
+}
+
+.projeto a {
+    flex-shrink: 0;
+}
+
+.projeto img {
+    width: 250px;
+    height: auto;
+    border-radius: 0.3em;
+}
+
+.projeto p {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+.lista-contatos {
+    width: 90%;
+    max-width: 750px;
+    padding: 10px;
+    background-color: var(--fundo-cinza);
+    border-radius:0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.lista-contatos li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+.lista-contatos li a {
+    text-decoration: none;
+    color: var(--texto-claro);
+    font-size: 12px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.lista-contatos li a:hover {
+    color: var(--destaque);
+}
+
+.lista-contatos li a i {
+    font-size: 9px;
+    margin: 0.5em;
+}
+
+@media (max-width: 1024px) {
+    /* Perfil */
+    .perfil .imagem-header {
+        width: 130px;
+        height: 130px;
+    }
+    .perfil .nome {
+        font-size: 18px;
+    }
+    .texto-header {
+        font-size: 12px;
+    }
+
+    .lista-tecnologias-container,
+    .projetos {
+        width: 100%;
+        max-width: 750px;
+    }
+
+    .lista-tecnologias li {
+        width: 70px;
+        height: 70px;
+    }
+
+ 
+    .projeto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        width: 100%;
+        padding: 5px;
+    }
+    .menu-toggle {
+        display: block; 
+    }
+    .lista {
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .lista li {
+        margin: 10px 0;
+    }
+    .lista.active {
+        display: flex; 
+    }
+
+    .perfil {
+        padding: 15px;
+    }
+    .imagem-header {
+        width: 120px;
+        height: 120px;
+    }
+    .perfil .nome {
+        font-size: 17px;
+    }
+    .texto-header {
+        font-size: 14px;
+    }
+
+
+    .lista-tecnologias li {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .projeto {
+        align-items: center;
+        flex-direction: column;
+    }
+    .projeto img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .imagem-header {
+        width: 100px;
+        height: 100px;
+    }
+    .perfil .nome {
+        font-size: 15px;
+    }
+    .texto-header {
+        font-size: 12px;
+    }
+
+
+    .lista-tecnologias li {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .projeto {
+        align-items: center;
+        flex-direction: column;
+    }
+    .projeto img {
+        width: 220px;
+    }
+
+
+    .contatos .lista-contatos {
+        width: 100%;
+    }
+    .contatos .lista-contatos li a {
+        font-size: 12px;
+    }
+    .contatos .lista-contatos li a i {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="lista" id="menu">
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+
+        <section id="perfil" class="perfil">
+            <img class="imagem-header" src="./img/imagem_perfil.png" alt="perfil">
+            <p class="nome">Aléxia de Oliveira Santos de Sousa</p>
+            <p class="texto-header">Sou formada em Sistemas de Informação e pós-graduada em Desenvolvimento Full-Stack, com sólida experiência em atendimento ao cliente. Atualmente, atuo como estagiária de pós-graduação no Ministério Público do Estado de Goiás, onde aplico minhas habilidades técnicas e interpessoais para contribuir com projetos estratégicos e oferecer suporte eficiente às demandas institucionais.</p>
+        </section>
+    </header>
+
+    <main>
+        <section id="tecnologias" class="lista-tecnologias-container">
+            <h2>Tecnologias</h2>
+            <ul class="lista-tecnologias">
+                <li><img src="./img/javascript.svg" alt="JavaScript"></li>
+                <li><img src="./img/typescript.svg" alt="TypeScript"></li>
+                <li><img src="./img/python.svg" alt="Python"></li>
+                <li><img src="./img/node-js.svg" alt="Node.js"></li>
+                <li><img src="./img/css.svg" alt="CSS"></li>
+                <li><img src="./img/html.svg" alt="HTML"></li>
+            </ul>
+        </section>
+
+        <section id="projetos" class="projetos">
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <a href="https://new-board-project.vercel.app/" target="_blank">
+                    <img src="./img/new-board.png" alt="New-board Project">
+                </a>
+                <p>O New-board é uma aplicação colaborativa de gerenciamento de tarefas, inspirada no Trello. Desenvolvida em equipe logo após a conclusão do bootcamp da Cubos Academy, a plataforma oferece uma interface intuitiva para organizar, acompanhar e colaborar em projetos, permitindo a criação de quadros e listas, facilitando a gestão de tarefas em um ambiente dinâmico e visual.</p>
+            </div>
+            <div class="projeto">
+                <a href="https://alexiasantos.github.io/street-fighter/" target="_blank">
+                    <img src="./img/street-fighter.png" alt="street-fighter">
+                </a>
+                <p>Este projeto foi desenvolvido como parte do treinamento das habilidades em JavaScript, CSS e HTML. Ele apresenta uma interface interativa para seleção de personagens do jogo Street Fighter, destacando o uso combinado dessas tecnologias para criar uma experiência visual e funcional.</p>
+            </div>
+            <div class="projeto">
+                <a href="https://alexiasantos.github.io/Calculadora-alexia/" target="_blank">
+                    <img src="./img/calculadora.png" alt="New-board Project">
+                </a>
+                <p>Esta calculadora foi desenvolvida com o objetivo de praticar e aprimorar habilidades na linguagem JavaScript, implementando operações matemáticas básicas.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contatos" class="contatos">
+        <ul class="lista-contatos">
+            <h2>Contatos</h2>
+            <li>
+                <a href="https://github.com/alexiasantos" target="_blank">
+                    <i class="fab fa-github"></i> GitHub: alexiasantos
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/alexiaosantos" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn: alexiasantos
+                </a>
+            </li>
+            <li>
+                <a href="mailto:alexiaosantos17@gmail.com">
+                    <i class="fas fa-envelope"></i> E-mail: alexiaosantos17@gmail.com
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
     --destaque: #ff0084;
     --fundo-escuro: #212121;
     --texto-claro: #ffffff;
-    --fundo-cinza: #191414;
+    --fundo-cinza: #0c0c0c;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     margin: 20px;
-    text-shadow: #000 2px 3px 2px;
+    text-shadow: #000 1px 2px 1px;
 }
 
 

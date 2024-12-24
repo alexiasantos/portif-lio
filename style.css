@@ -3,9 +3,9 @@
 /* Root variables */
 :root {
     --destaque: #ff0084;
-    --fundo-escuro: #121212;
+    --fundo-escuro: #212121;
     --texto-claro: #ffffff;
-    --fundo-cinza: #212121;
+    --fundo-cinza: #191414;
 }
 
 * {
@@ -25,6 +25,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     margin: 20px;
+    text-shadow: #000 2px 3px 2px;
 }
 
 

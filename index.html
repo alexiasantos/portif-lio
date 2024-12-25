@@ -1,84 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <title>Meu Portfólio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <title>Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <nav class="menu">
-            <button class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
+        <div class="menu">
+            <div class="menu-logo">
+                <ul class="redes-sociais">
+                    <li><a href="https://github.com/alexiasantos" target="_blank"> <i class="fab fa-github" style="font-size: 30px;"></i></a></li>
+                    <li><a href="https://linkedin.com/in/alexiaosantos" target="_blank"><i class="fab fa-linkedin" style="font-size: 30px;"></i></a></li>
+                </ul>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+                ☰
             </button>
-            <ul class="lista" id="menu">
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
+            <ul class="menu-itens">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contatos">Contatos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
-        </nav>
-
-        <section id="perfil" class="perfil">
-            <img class="imagem-header" src="./img/imagem_perfil.png" alt="perfil">
-            <p class="nome">Aléxia de Oliveira Santos de Sousa</p>
-            <p class="texto-header">Sou formada em Sistemas de Informação e pós-graduada em Desenvolvimento Full-Stack, com sólida experiência em atendimento ao cliente. Atualmente, atuo como estagiária de pós-graduação no Ministério Público do Estado de Goiás, onde aplico minhas habilidades técnicas e interpessoais para contribuir com projetos estratégicos e oferecer suporte eficiente às demandas institucionais.</p>
-        </section>
+        </div>
     </header>
 
-    <main>
-        <section id="tecnologias" class="lista-tecnologias-container">
-            <h2>Tecnologias</h2>
-            <ul class="lista-tecnologias">
-                <li><img src="./img/javascript.svg" alt="JavaScript"></li>
-                <li><img src="./img/typescript.svg" alt="TypeScript"></li>
-                <li><img src="./img/python.svg" alt="Python"></li>
-                <li><img src="./img/nodejs.svg" alt="Node.js"></li>
-                <li><img src="./img/css.svg" alt="CSS"></li>
-                <li><img src="./img/html.svg" alt="HTML"></li>
-            </ul>
-        </section>
+    <!-- Seção de Perfil -->
+    <section id="sobre" class="perfil">
+        <img src="./img/imagem_perfil.png" alt="Foto de perfil">
+        <h1 class="nome">Aléxia de Oliveira Santos de Sousa</h1>
+        <p class="descricao">Sou desenvolvedora Full Stack, formada em Sistemas de Informação pela Universidade Estadual de Goiás e pós-graduada em Desenvolvimento Full Stack pela Faculdade Descomplica. Tenho ampla experiência em atendimento ao cliente, participei do bootcamp Cubos Academy em parceria com o iFood e atualmente atuo como estagiária no Ministério Público do Estado de Goiás. Sou determinada, apaixonada por tecnologia e estou sempre em busca de capacitação para transformar ideias em soluções digitais inovadoras</p>
 
-        <section id="projetos" class="projetos">
-            <h2>Projetos</h2>
-            <div class="projeto">
-                <a href="https://new-board-project.vercel.app/" target="_blank">
-                    <img src="./img/new-board.png" alt="New-board Project">
-                </a>
-                <p>O New-board é uma aplicação colaborativa de gerenciamento de tarefas, inspirada no Trello. Desenvolvida em equipe logo após a conclusão do bootcamp da Cubos Academy, a plataforma oferece uma interface intuitiva para organizar, acompanhar e colaborar em projetos, permitindo a criação de quadros e listas, facilitando a gestão de tarefas em um ambiente dinâmico e visual.</p>
-            </div>
-            <div class="projeto">
-                <a href="https://alexiasantos.github.io/street-fighter/" target="_blank">
-                    <img src="./img/street-fighter.png" alt="street-fighter">
-                </a>
-                <p>Este projeto foi desenvolvido como parte do treinamento das habilidades em JavaScript, CSS e HTML. Ele apresenta uma interface interativa para seleção de personagens do jogo Street Fighter, destacando o uso combinado dessas tecnologias para criar uma experiência visual e funcional.</p>
-            </div>
-        </section>
-    </main>
 
-    <footer id="contatos" class="contatos">
-        <ul class="lista-contatos">
-            <h2>Contatos</h2>
+    </section>
+
+    <!-- Seção de Habilidades -->
+    <section id="habilidades" class="secao">
+        <h2>Minhas Habilidades</h2>
+        <ul class="lista-habilidades">
+            <h4>Idiomas</h4>
             <li>
-                <a href="https://github.com/alexiasantos" target="_blank">
-                    <i class="fab fa-github"></i> GitHub: alexiasantos
-                </a>
+                <span>Inglês</span>
+                <div class="barra-nivel">
+                    <span style="width: 70%;"></span>
+                </div>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/alexiaosantos" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn: alexiasantos
-                </a>
+                <span>Espanhol</span>
+                <div class="barra-nivel">
+                    <span style="width: 40%;"></span>
+                </div>
+            </li>
+            <h4>Tecnologias</h4>
+            <li>
+                <span>HTML</span>
+                <div class="barra-nivel">
+                    <span style="width: 90%;"></span>
+                </div>
             </li>
             <li>
-                <a href="mailto:alexiaosantos17@gmail.com">
-                    <i class="fas fa-envelope"></i> E-mail: alexiaosantos17@gmail.com
-                </a>
+                <span>CSS</span>
+                <div class="barra-nivel">
+                    <span style="width: 90%;"></span>
+                </div>
+            </li>
+            <li>
+                <span>JavaScript</span>
+                <div class="barra-nivel">
+                    <span style="width: 90%;"></span>
+                </div>
+            </li>
+            <li>
+                <span>React</span>
+                <div class="barra-nivel">
+                    <span style="width: 65%;"></span>
+                </div>
+            </li>
+            <li>
+                <span>Node.js</span>
+                <div class="barra-nivel">
+                    <span style="width: 65%;"></span>
+                </div>
             </li>
         </ul>
-    </footer>
+    </section>
 
+    <!-- Seção de Projetos -->
+    <section id="projetos" class="secao">
+        <h2>Meus Projetos</h2>
+        <ul class="lista-projetos">
+            <li class="projeto">
+                    <img src="./img/new-board.png" alt="Projeto 1">
+                    <h3>New Board</h3> 
+                <a href="https://new-board-project.vercel.app/" target="_blank">Demonstração</a><br>
+                <a href="https://github.com/My-Tech-Mind/new-board" target="_blank" rel="noopener noreferrer">Repositório</a>
+            </li>
+            <li class="projeto">
+                
+                    <img src="./img/street-fighter.png" alt="Projeto 2">
+                    <h3>Street Fighter: Escolha de player</h3> 
+                    <a href="https://alexiasantos.github.io/street-fighter/" target="_blank">Demonstração</a><br>      
+                <a href="https://github.com/alexiasantos/street-fighter" target="_blank" rel="noopener noreferrer">Repositório</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="secao">
+        <h2>Entre em Contato</h2>
+        <div class="contatos"> 
+            <form id="contact-form">
+                <label for="user-name">Seu Nome:</label>
+                <input type="text" id="user-name" name="user_name" required />
+              
+                <label for="user-email">Seu E-mail:</label>
+                <input type="email" id="user-email" name="user_email" required />
+              
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Aléxia Santos. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

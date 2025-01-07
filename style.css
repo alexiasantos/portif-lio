@@ -21,9 +21,14 @@ body {
     color: var(--cor-secundaria);
     font-weight: 200;
     line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header {
+    width: 100%;
     padding: 20px 0;
     background-color: var(--cor-secundaria);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -70,6 +75,12 @@ header {
 
 .menu-itens a:hover {
     color: var(--cor-fundo);
+}
+.secao{
+    width: 90%;
+}
+footer{
+    width: 100%;
 }
 
 @media (max-width: 768px) {
